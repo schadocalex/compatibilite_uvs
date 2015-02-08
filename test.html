@@ -691,16 +691,17 @@
 			var combinaisons = getAllCombinaisonAllUvs([
 				['RO03', 'SR02'],
 				['LO21', 'NF17', 'SR03', 'NF22'],
-				['GE28', 'NF17', 'SR03', 'NF22'],
 				['NA17', 'NF17', 'SR03', 'NF22'],
-				['SP01', 'IC03', 'DI02', 'IC11'],
-				['IC06', 'IC03', 'DI02', 'IC11'],
-				['NA17', 'IC03', 'DI02', 'IC11']
+				['PR', 'NF17', 'SR03', 'NF22'],
+				['SP01', 'IC03', 'DI02', 'SI11'],
+				['IC06', 'IC03', 'DI02', 'SI11'],
+				['GE28', 'IC03', 'DI02', 'SI11']
 			]);
 			var i = 0;
 			combinaisons.forEach(function (combinaison, key, list) {
 				console.log(++i);
-				$('body').append('<p>' + combinaison.join(" ") + ' : '+ checkUvs(combinaison) +'</p><br>');
+				$('body').append('<p>' + combinaison.join(" ") + ' : '+ checkUvs(combinaison) +'</p>');
+				// $('body').append('<p>' + combinaison.join(" ") +'</p>');
 			});
 		});
 	</script>
